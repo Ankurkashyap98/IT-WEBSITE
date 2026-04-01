@@ -23,12 +23,19 @@ const tealShadowLg = "0 18px 50px rgba(13, 148, 136, 0.22)";
 
 export default function Home() {
   const reduceMotion = useReducedMotion();
-  const text = "Empowering Businesses with Cutting-Edge IT Solutions".split(" ");
+  const text = "Empowering Businesses with Cutting-Edge IT Solutions".split(
+    " ",
+  );
   const services = [
     {
       title: "Custom Web Development",
       desc: "Responsive, high-performance web apps tailored to your business — React, Node, and cloud-native delivery.",
-      features: ["Full-Stack Development", "E-Commerce Platforms", "API Integration", "Performance Tuning"],
+      features: [
+        "Full-Stack Development",
+        "E-Commerce Platforms",
+        "API Integration",
+        "Performance Tuning",
+      ],
       Icon: Laptop,
       image:
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
@@ -36,7 +43,12 @@ export default function Home() {
     {
       title: "UI/UX Design Excellence",
       desc: "Research-led interfaces and design systems that improve clarity, conversion, and accessibility.",
-      features: ["User Research & Testing", "Figma & Prototypes", "Mobile-First UI", "Accessibility"],
+      features: [
+        "User Research & Testing",
+        "Figma & Prototypes",
+        "Mobile-First UI",
+        "Accessibility",
+      ],
       Icon: Palette,
       image:
         "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
@@ -44,7 +56,12 @@ export default function Home() {
     {
       title: "Cloud Infrastructure & DevOps",
       desc: "Secure scaling on AWS, Azure, or GCP — CI/CD, observability, and uptime you can trust.",
-      features: ["AWS/Azure/GCP", "CI/CD Pipelines", "Containers & IaC", "Security Reviews"],
+      features: [
+        "AWS/Azure/GCP",
+        "CI/CD Pipelines",
+        "Containers & IaC",
+        "Security Reviews",
+      ],
       Icon: Cloud,
       image:
         "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
@@ -52,7 +69,12 @@ export default function Home() {
     {
       title: "AI & Machine Learning Solutions",
       desc: "Practical AI: automation, analytics, and assistants integrated into your existing workflows.",
-      features: ["NLP & Chatbots", "Computer Vision", "Data Pipelines", "Model Integration"],
+      features: [
+        "NLP & Chatbots",
+        "Computer Vision",
+        "Data Pipelines",
+        "Model Integration",
+      ],
       Icon: Bot,
       image:
         "https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
@@ -67,12 +89,36 @@ export default function Home() {
   ];
 
   const partnerReasons = [
-    { title: "Agile Development", desc: "Fast, iterative development with regular client feedback and transparent communication.", Icon: Zap },
-    { title: "Cutting-Edge Tech", desc: "We stay ahead of technology trends, using the latest tools and frameworks for optimal performance.", Icon: Wrench },
-    { title: "Scalable Solutions", desc: "Build for growth with architectures that can handle increased traffic and complex features.", Icon: TrendingUp },
-    { title: "Security First", desc: "Implement robust security measures and best practices to protect your data and users.", Icon: Lock },
-    { title: "Dedicated Support", desc: "Ongoing maintenance, updates, and support to ensure your solution evolves with your needs.", Icon: Handshake },
-    { title: "Proven Results", desc: "Track record of successful projects with measurable ROI and client satisfaction.", Icon: Trophy },
+    {
+      title: "Agile Development",
+      desc: "Fast, iterative development with regular client feedback and transparent communication.",
+      Icon: Zap,
+    },
+    {
+      title: "Cutting-Edge Tech",
+      desc: "We stay ahead of technology trends, using the latest tools and frameworks for optimal performance.",
+      Icon: Wrench,
+    },
+    {
+      title: "Scalable Solutions",
+      desc: "Build for growth with architectures that can handle increased traffic and complex features.",
+      Icon: TrendingUp,
+    },
+    {
+      title: "Security First",
+      desc: "Implement robust security measures and best practices to protect your data and users.",
+      Icon: Lock,
+    },
+    {
+      title: "Dedicated Support",
+      desc: "Ongoing maintenance, updates, and support to ensure your solution evolves with your needs.",
+      Icon: Handshake,
+    },
+    {
+      title: "Proven Results",
+      desc: "Track record of successful projects with measurable ROI and client satisfaction.",
+      Icon: Trophy,
+    },
   ];
 
   const brands = ["Nexus", "Orbit", "Volt", "Apex", "Scale"];
@@ -136,8 +182,11 @@ export default function Home() {
               className="mt-3 sm:mt-4 text-white max-w-xl mx-auto lg:mx-0 text-base sm:text-lg leading-relaxed font-medium"
             >
               Transform your business with{" "}
-              <span className="tn-shimmer-text font-semibold">innovative technology</span> — from web
-              platforms to AI, we ship secure, scalable products that look sharp and perform.
+              <span className="tn-shimmer-text font-semibold">
+                innovative technology
+              </span>{" "}
+              — from web platforms to AI, we ship secure, scalable products that
+              look sharp and perform.
             </motion.p>
             <motion.p
               initial={{ opacity: 0 }}
@@ -145,7 +194,8 @@ export default function Home() {
               transition={{ delay: text.length * 0.1 + 0.35, duration: 0.5 }}
               className="mt-2 text-white max-w-xl mx-auto lg:mx-0 text-sm sm:text-base leading-relaxed"
             >
-              Discovery workshops, solution architecture, and dedicated squads — scoped to your roadmap and budget.
+              Discovery workshops, solution architecture, and dedicated squads —
+              scoped to your roadmap and budget.
             </motion.p>
 
             <motion.div
@@ -205,12 +255,20 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.25, duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              delay: 0.25,
+              duration: 0.65,
+              ease: [0.22, 1, 0.36, 1],
+            }}
             className="relative order-2 w-full max-w-lg mx-auto lg:max-w-none"
           >
             <motion.div
               animate={floatCard}
-              transition={{ duration: 5.5, repeat: reduceMotion ? 0 : Infinity, ease: "easeInOut" }}
+              transition={{
+                duration: 5.5,
+                repeat: reduceMotion ? 0 : Infinity,
+                ease: "easeInOut",
+              }}
               className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-teal-900/25 ring-2 ring-teal-200/60"
             >
               <img
@@ -227,10 +285,16 @@ export default function Home() {
               >
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 sm:h-12 sm:w-12 shrink-0 rounded-xl bg-gradient-to-br from-teal-500 to-cyan-500 flex items-center justify-center shadow-lg text-white">
-                    <Zap className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={2.25} aria-hidden />
+                    <Zap
+                      className="w-5 h-5 sm:w-6 sm:h-6"
+                      strokeWidth={2.25}
+                      aria-hidden
+                    />
                   </div>
                   <div className="min-w-0 text-left">
-                    <p className="font-bold text-slate-800 text-sm sm:text-base">Ship faster</p>
+                    <p className="font-bold text-slate-800 text-sm sm:text-base">
+                      Ship faster
+                    </p>
                     <p className="text-xs sm:text-sm text-slate-600 leading-snug">
                       Design systems · CI/CD · Cloud-native
                     </p>
@@ -241,7 +305,11 @@ export default function Home() {
             <motion.div
               aria-hidden
               className="absolute -z-10 -right-4 lg:-right-8 top-8 lg:top-12 h-32 w-32 lg:h-40 lg:w-40 rounded-full bg-cyan-400/30 blur-3xl"
-              animate={reduceMotion ? {} : { scale: [1, 1.12, 1], opacity: [0.35, 0.6, 0.35] }}
+              animate={
+                reduceMotion
+                  ? {}
+                  : { scale: [1, 1.12, 1], opacity: [0.35, 0.6, 0.35] }
+              }
               transition={{ duration: 6, repeat: Infinity }}
             />
           </motion.div>
@@ -262,7 +330,8 @@ export default function Home() {
             Our Core Services
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-base sm:text-lg px-2">
-            Strategy, design, engineering, and DevOps under one roof — so you launch faster without sacrificing quality or security.
+            Strategy, design, engineering, and DevOps under one roof — so you
+            launch faster without sacrificing quality or security.
           </p>
         </motion.div>
 
@@ -279,19 +348,34 @@ export default function Home() {
             >
               <div className="flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-teal-100/50 bg-white shadow-lg shadow-slate-200/40 ring-1 ring-slate-200/60 transition-shadow duration-300 hover:shadow-xl hover:shadow-teal-600/10 group">
                 <div className="relative h-40 sm:h-44 shrink-0 overflow-hidden">
-                  <img src={s.image} alt="" className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
+                  <img
+                    src={s.image}
+                    alt=""
+                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-teal-950/55 to-transparent opacity-90" />
                   <div className="absolute bottom-2.5 left-2.5 flex h-10 w-10 items-center justify-center rounded-xl bg-white/25 backdrop-blur-md ring-1 ring-white/50">
-                    <s.Icon className="h-5 w-5 text-white" strokeWidth={2.25} aria-hidden />
+                    <s.Icon
+                      className="h-5 w-5 text-white"
+                      strokeWidth={2.25}
+                      aria-hidden
+                    />
                   </div>
                 </div>
                 <div className="flex min-h-0 flex-1 flex-col p-5 sm:p-6">
-                  <h3 className="mb-2 text-lg font-bold text-slate-900 sm:text-xl">{s.title}</h3>
-                  <p className="mb-4 text-sm leading-relaxed text-slate-600">{s.desc}</p>
+                  <h3 className="mb-2 text-lg font-bold text-slate-900 sm:text-xl">
+                    {s.title}
+                  </h3>
+                  <p className="mb-4 text-sm leading-relaxed text-slate-600">
+                    {s.desc}
+                  </p>
 
                   <ul className="min-h-0 flex-1 space-y-2">
                     {s.features.map((f, idx) => (
-                      <li key={idx} className="flex items-center text-xs text-slate-500 sm:text-sm">
+                      <li
+                        key={idx}
+                        className="flex items-center text-xs text-slate-500 sm:text-sm"
+                      >
                         <span className="mr-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-br from-teal-400 to-cyan-500" />
                         {f}
                       </li>
@@ -327,10 +411,14 @@ export default function Home() {
               Why Choose TechNova Solutions?
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-4">
-              With over 8 years in IT, we've helped hundreds of businesses modernize stacks, launch products, and scale teams — with clear communication and measurable outcomes.
+              With over 8 years in IT, we've helped hundreds of businesses
+              modernize stacks, launch products, and scale teams — with clear
+              communication and measurable outcomes.
             </p>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-6">
-              We focus on long-term partnerships: code reviews, observability, and playbooks so your product stays fast, secure, and easy to evolve.
+              We focus on long-term partnerships: code reviews, observability,
+              and playbooks so your product stays fast, secure, and easy to
+              evolve.
             </p>
             <motion.button
               whileHover={{ scale: 1.03, boxShadow: tealShadow }}
@@ -368,15 +456,24 @@ export default function Home() {
             >
               <div className="flex items-center mb-2 sm:mb-3">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-teal-100 to-cyan-100 rounded-xl flex items-center justify-center mr-3 text-teal-700 shrink-0">
-                  <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={2.25} aria-hidden />
+                  <TrendingUp
+                    className="w-5 h-5 sm:w-6 sm:h-6"
+                    strokeWidth={2.25}
+                    aria-hidden
+                  />
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900 text-sm sm:text-base">500+ Projects</h4>
-                  <p className="text-slate-600 text-xs sm:text-sm">Successfully Delivered</p>
+                  <h4 className="font-bold text-slate-900 text-sm sm:text-base">
+                    500+ Projects
+                  </h4>
+                  <p className="text-slate-600 text-xs sm:text-sm">
+                    Successfully Delivered
+                  </p>
                 </div>
               </div>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                From startups to enterprise teams — shipping on schedule with QA, docs, and handover you can trust.
+                From startups to enterprise teams — shipping on schedule with
+                QA, docs, and handover you can trust.
               </p>
             </motion.div>
           </motion.div>
@@ -395,9 +492,12 @@ export default function Home() {
             transition={{ duration: 0.65 }}
             className="text-center mb-10 md:mb-12"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-2 sm:mb-3">Our Impact in Numbers</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-2 sm:mb-3">
+              Our Impact in Numbers
+            </h2>
             <p className="text-teal-100 max-w-2xl mx-auto text-base sm:text-lg px-2">
-              Outcomes we track with you: delivery velocity, uptime, and satisfaction — not vanity metrics.
+              Outcomes we track with you: delivery velocity, uptime, and
+              satisfaction — not vanity metrics.
             </p>
           </motion.div>
 
@@ -413,10 +513,18 @@ export default function Home() {
                 className="text-center bg-white/15 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border border-white/25 shadow-lg shadow-teal-950/20"
               >
                 <div className="flex justify-center mb-2 sm:mb-3 text-white">
-                  <stat.Icon className="w-8 h-8 sm:w-9 sm:h-9" strokeWidth={1.75} aria-hidden />
+                  <stat.Icon
+                    className="w-8 h-8 sm:w-9 sm:h-9"
+                    strokeWidth={1.75}
+                    aria-hidden
+                  />
                 </div>
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-1">{stat.number}</h3>
-                <p className="text-teal-100 text-xs sm:text-sm font-medium leading-tight px-1">{stat.label}</p>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-1">
+                  {stat.number}
+                </h3>
+                <p className="text-teal-100 text-xs sm:text-sm font-medium leading-tight px-1">
+                  {stat.label}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -432,9 +540,12 @@ export default function Home() {
           transition={{ duration: 0.65 }}
           className="text-center mb-10 md:mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 mb-3 tracking-tight">Why Partner With Us?</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 mb-3 tracking-tight">
+            Why Partner With Us?
+          </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-base sm:text-lg px-2">
-            One partner for product, platform, and people — so you spend less time coordinating vendors and more time growing revenue.
+            One partner for product, platform, and people — so you spend less
+            time coordinating vendors and more time growing revenue.
           </p>
         </motion.div>
 
@@ -452,8 +563,12 @@ export default function Home() {
               <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-teal-50 text-teal-700 group-hover:bg-teal-100 transition-colors">
                 <item.Icon className="w-6 h-6" strokeWidth={2} aria-hidden />
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">{item.desc}</p>
+              <h3 className="text-lg font-bold text-slate-900 mb-2">
+                {item.title}
+              </h3>
+              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+                {item.desc}
+              </p>
             </motion.div>
           ))}
         </div>
@@ -482,7 +597,8 @@ export default function Home() {
             transition={{ duration: 0.65, delay: 0.1 }}
             className="text-teal-50 text-base sm:text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed px-2"
           >
-            Book a free discovery call — we'll map scope, risks, and a practical timeline before you commit.
+            Book a free discovery call — we'll map scope, risks, and a practical
+            timeline before you commit.
           </motion.p>
 
           <motion.div
@@ -493,7 +609,10 @@ export default function Home() {
             className="flex flex-col sm:flex-row gap-3 justify-center"
           >
             <motion.button
-              whileHover={{ scale: 1.04, boxShadow: "0 20px 50px rgba(0,0,0,0.25)" }}
+              whileHover={{
+                scale: 1.04,
+                boxShadow: "0 20px 50px rgba(0,0,0,0.25)",
+              }}
               whileTap={{ scale: 0.98 }}
               className="px-8 py-3.5 sm:px-10 sm:py-4 bg-white text-teal-700 rounded-xl font-bold hover:bg-teal-50 transition-all duration-300 shadow-xl text-sm sm:text-base"
               onClick={() => (window.location.href = "/contact")}
@@ -501,9 +620,12 @@ export default function Home() {
               Get Started Today
             </motion.button>
             <motion.button
-              whileHover={{ scale: 1.04, boxShadow: "0 20px 50px rgba(0,0,0,0.25)" }}
+              whileHover={{
+                scale: 1.04,
+                boxShadow: "0 20px 50px rgba(0,0,0,0.25)",
+              }}
               whileTap={{ scale: 0.98 }}
-              className="px-8 py-3.5 sm:px-10 sm:py-4 border-2 border-white text-teal-700 rounded-xl font-bold hover:bg-white/10 transition-all duration-300 text-sm sm:text-base"
+              className="px-8 py-3.5 sm:px-10 sm:py-4 bg-white text-teal-700 rounded-xl font-bold hover:bg-teal-50 transition-all duration-300 shadow-xl text-sm sm:text-base"
               onClick={() => (window.location.href = "/about")}
             >
               Learn More
